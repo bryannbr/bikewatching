@@ -1,0 +1,33 @@
+body {
+    font: 100%/1.5 system-ui, sans-serif;
+    display: flex;
+    flex-flow: column;
+    max-width: 80em;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 1em;
+}
+
+
+/* 5.1 */
+.time-filter {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.time-filter label {
+    margin-left: auto;   /* pushes slider to the right */
+}
+
+.time-filter time,
+.time-filter em {
+    display: block;      /* prevents slider from jumping when text updates */
+}
+
+#anyTime {
+    color: #666;
+    font-style: italic;
+}
